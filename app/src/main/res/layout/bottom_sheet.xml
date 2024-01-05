@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bottom_sheet_bg"
+    android:layout_height="200dp"
+    android:id="@+id/bottomSheet"
+    >
+
+    <ImageView
+        android:id="@+id/infoButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/info_ic" />
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Privacy Policy"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintBottom_toBottomOf="@+id/infoButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/infoButton"
+        app:layout_constraintTop_toTopOf="@+id/infoButton" />
+
+    <ImageView
+        android:id="@+id/aboutDev"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoButton"
+        app:srcCompat="@drawable/developer_ic" />
+
+    <TextView
+        android:id="@+id/aboutDevText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Developer"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintBottom_toBottomOf="@+id/aboutDev"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toEndOf="@+id/aboutDev"
+        app:layout_constraintTop_toTopOf="@+id/aboutDev" />
+</androidx.constraintlayout.widget.ConstraintLayout>
